@@ -1,0 +1,135 @@
+.productCard {
+  z-index: 10;
+  margin-top: .8rem;
+  background-color: #eee;
+  padding: 0.2rem;
+  border: #aaa;
+  border-radius: .2rem;
+  box-shadow: 0 0 0.2rem #999, 0 0 0.2rem #999;
+  // box-shadow: 0 0 0.3rem blue, 0 0 0.3rem blue;
+  // transition: box-shadow .2s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+  &:hover {
+    box-shadow: 0 0 0.3rem blue, 0 0 0.3rem blue;
+  }
+  cursor: pointer;
+  .productMedia {
+    position: relative;
+    .productImage {
+      width: 100%;
+      height: 300px;
+      border-radius: .2rem;
+    }
+    .rating {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 4px;
+      border-radius: 50%;
+      align-items: center;
+      font: {
+        size: 1rem;
+        weight: 700;
+        family: $Quantico;
+      }
+      .ratingNumber {
+        text-shadow: 0 0 0.4rem #ccc, 0 0 0.4rem #ccc;
+      }
+    }
+    .sale {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 4px 8px;
+      background-color: #f44034;
+      color: #eee;
+      font-weight: 700;
+      box-shadow: 0 0 0.4rem #D50000,0 0 0.4rem #D50000;
+    }
+    .stock-out {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) rotate(-35deg);
+      padding: 8px 16px;
+      border-radius: 0.4rem;
+      border: 0.1rem solid red;
+      background-color: #212121d3;
+      color: #eee;
+      box-shadow: 0 0 0.4rem #D50000,0 0 0.4rem #D50000;
+      text-shadow: 0 0 0.2rem #D50000,0 0 0.2rem #D50000;
+      white-space: nowrap;
+      display: block;
+      font: {
+        size: 20px;
+        weight: 700;
+      }
+    }
+
+    .buyNow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 10px 20px;
+      background-color: #1976D2;
+      border-radius: 0.2rem;
+      color: #eee;
+      border: none;
+      text-shadow: 0 0 0.1rem blue, 0 0 0.1rem blue;
+      box-shadow: 0 0 0.1rem blue,0 0 0.1rem blue;
+      cursor: pointer;
+      display: none;
+      // transition: 500ms;
+      white-space: nowrap;
+      &:hover {
+        text-shadow: 0 0 0.3rem blue, 0 0 0.3rem blue;
+        box-shadow: 0 0 0.2rem blue,0 0 0.2rem blue;
+        background-color: #01329b;
+      }
+      font: {
+        weight: 700;
+        size: 1.5rem;
+      }
+    }
+
+    &:hover {
+      .buyNow {
+        display: block;
+      }
+    }
+  }
+  .productInfo {
+    width: 100%;
+    padding: 0.5rem;
+    .productTitle {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      padding-bottom: .1rem;
+      font: {
+        family: $Poppins;
+        weight: 400;
+        size: .95rem;
+      }
+    }
+    .prices {
+      font-family: $Quantico !important;
+      margin-top: .5rem;
+      .price {
+        font: {
+          size: 1.5rem;
+          weight: 700;
+        }
+      }
+      .oldPrice {
+        text-decoration: line-through;
+        font: {
+          size: .8rem;
+          weight: 500;
+        }
+      }
+    }
+  }
+}

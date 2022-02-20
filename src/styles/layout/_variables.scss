@@ -1,0 +1,23 @@
+// Fonts Variables
+$Poppins: 'Poppins', sans-serif;
+$Quantico: 'Quantico', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+
+
+// Colors Variables
+$primary: #673AB7;
+$primary-glases: #673AB7dd;
+$secondary: #283593;
+$danger: #C62828;
+$success: #388E3C;
+$light: #eee;
+$light-hover: #fff;
+$warning: #FFEE58;
+
+
+// Grid Responsive => @media (min-width: 575.98px) { ... }
+$sm: 575.98px; // portrait phones
+$md: 767.98px; // landscape phones
+$lg: 991.98px; // tablets
+$xl: 1199.98px; // desktops
+$xxl: 1399.98px; // large desktops

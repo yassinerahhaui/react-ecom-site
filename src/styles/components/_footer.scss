@@ -1,0 +1,93 @@
+footer {
+  position: relative;
+  background-color: #1A237E;
+  color: #eee;
+  height: 500px;
+  .logo {
+    width: 100%;
+    font: {
+      family: $Quantico;
+      size: 5vmin;
+      weight: 700;
+    }
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 0.01rem solid #261075;
+  }
+  .social-icons-link {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 0.01rem solid #261075;
+    ul {
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      li {
+        margin-inline: 5px;
+        align-items: center;
+        line-height: 0;
+        padding: 0;
+        a {
+          color: #ccc;
+          font-size: 3rem;
+          align-items: center;
+          line-height: 0;
+          padding: 0;
+          @media(max-width: $sm) {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+
+  .payments {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    @media(max-width: $sm) {
+      display: block;
+      text-align: center;
+      .copyright {
+        display: block;
+      }
+    }
+    .creditcard {
+      list-style-type: none;
+      padding: none;
+      align-items: center;
+      li {
+        border: 1px solid #999;
+        font-size: 40px;
+        display: inline-block;
+        margin-inline: 10px;
+        padding-inline: 10px;
+        border-radius: .3rem;
+        color: white;
+        align-items: center;
+        line-height: 10px;
+        background: rgb(26,27,99);
+        background: linear-gradient(90deg, rgba(26,27,99,1) 0%, rgba(13,22,87,1) 49%, rgba(32,11,144,1) 100%);
+        @media(max-width: $sm) {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .copyright {
+      padding: 10px;
+      font: {
+        size: 20px;
+        family: $Quantico;
+        weight: 700;
+      };
+      @media(max-width: $sm) {
+        clear: both;
+      }
+    }
+  }
+
+}

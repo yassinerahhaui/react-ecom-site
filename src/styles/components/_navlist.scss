@@ -1,0 +1,55 @@
+.navlist {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  box-shadow: 0 0 0.4rem #2C3E50, 0 0 0.4rem #2C3E50;
+  transition: left .5s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+  -webkit-transition: left .5s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+  left: 0px;
+  overflow: hidden;
+  width: 250px;
+  background: #272727;
+  color: #eee;
+  padding-top: 20px;
+  &:hover {
+    box-shadow: 0 0 0.2rem blue, 0 0 0.2rem blue;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  .itemList {
+    width: 100%;
+    padding: 6px 20px;
+    border-bottom: 1px solid grey;
+    text-transform: capitalize;
+    cursor: pointer;
+    font: {
+      size: 20px;
+      family: $Poppins;
+    }
+    &:hover {
+      background-color: #212121;
+      box-shadow: 0 0 0.2rem blue, 0 0 0.2rem blue;
+    }
+    .textItemList {
+      margin-left: 20px;
+    }
+
+  }
+}
+.darkScreen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(16, 14, 14, 0.54);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  z-index: 999;
+}
